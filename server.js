@@ -6,7 +6,7 @@ const port = 8000;
 
 class User {
     constructor() {
-        this._id = faker.datatype.uuid()
+        this._id = faker.datatype.number(100)
         this.firstName = faker.name.firstName();
         this.lastName = faker.name.lastName();
         this.phoneNumber = faker.phone.number();
@@ -17,7 +17,7 @@ class User {
 
 class Company {
     constructor() {
-        this._id = faker.datatype.uuid();
+        this._id = faker.datatype.number(100);
         this.name = faker.company.name();
         this.street = faker.address.street();
         this.city = faker.address.city();
